@@ -1,0 +1,29 @@
+@use "../global" as *;
+
+.l-footer {
+  position: relative;
+  background-color: black;
+  height: 500px;
+  color: $color1;
+  p {
+    writing-mode: vertical-rl;
+    position: absolute;
+    height: 400px;
+    right: 15%;
+    top: 48px;
+    @include f_around(12, regular, 20, 20);
+  }
+
+  &__logo {
+    width: 38px;
+    line-height: 93px;
+    padding-right: 30px;
+    position: absolute;
+    top: 63px;
+    right: 4%;
+    @include tab {
+      padding-right: 6px;
+      top: 50px;
+    }
+  }
+}
