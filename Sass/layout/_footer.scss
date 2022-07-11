@@ -1,4 +1,11 @@
 @use "../global" as *;
 
 .l-footer {
+  width: 100%;
+  background: #f7f7f7;
+  &__article {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
