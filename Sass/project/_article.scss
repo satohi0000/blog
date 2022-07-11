@@ -1,42 +1,55 @@
 @use "../global" as *;
 
 .p-article {
-  &__picture {
-    width: 62%;
-    object-fit: cover;
-    margin-right: 40px;
-    margin-top: 94px;
-    @include tab {
-      width: 80%;
+  &__profile {
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
       object-fit: cover;
-      margin-right: 11px;
-      margin-top: 73px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 26px;
+    }
+    p {
+      margin: 25px 25px 28px 39px;
     }
   }
-  &__section {
-    &__text,
-    &__title {
-      margin-right: 15px;
-      writing-mode: vertical-rl;
-      &-2 {
-        writing-mode: vertical-rl;
-        margin-right: 46px;
-        margin-top: 5px;
-        @include tab {
-          font-size: 20px;
-          margin-right: 14px;
+  &__runking {
+    margin-top: 45px;
+    img {
+      text-align: center;
+      width: 85%;
+      margin-top: 18px;
+      margin-left: 37px;
+      object-fit: cover;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: 0px 26px 2px 38px;
+    }
+  }
+  &__archive {
+    margin-top: 48px;
+    margin-left: 37px;
+    margin-right: 23px;
+    h2 {
+      text-align: center;
+    }
+    &__position {
+      margin-top: 24px;
+      p {
+        margin-top: 0px;
+        border-top: 1px solid #333;
+        line-height: 60px;
+        &:last-child {
+          border-bottom: 1px solid #333;
         }
-      }
-    }
-    &__text {
-      &-2 {
-        display: none;
-      }
-    }
-    &__title {
-      @include tab {
-        margin-right: 18px;
-        margin-top: 4px;
       }
     }
   }

@@ -1,48 +1,19 @@
 @use "../global" as *;
-.list {
+.c-list {
   width: 100%;
-  height: 150px;
-  padding-top: 27px;
-  writing-mode: vertical-rl;
-  position: absolute;
+  background-color: $color2;
+  height: 40px;
+  margin: 14px 0 0 0;
 
-  @include tab {
-    padding-top: 0px;
-    padding-bottom: 10px;
-  }
-  ul {
-    li {
-      @include f_around(16, regular, 24, 10);
-    }
-  }
   &__menu {
-    top: 60px;
-    right: 12%;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
 
-    @include tab {
-      top: 21px;
-      right: 29%;
-    }
-    height: 150px;
-    position: absolute;
-    li {
-      margin: 0 12.5px;
-    }
-    &2 {
-      top: 70px;
-      right: 19%;
-      height: 150px;
-      @include tab {
-        top: 50px;
-        right: 36%;
-      }
-      position: absolute;
-      li {
-        margin: 0 12.5px;
-        @include tab {
-          margin: 0 3.5px;
-        }
-      }
+    a {
+      color: $color1;
+      margin: 10px 49px 0 13px;
     }
   }
 }

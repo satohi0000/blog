@@ -1,75 +1,43 @@
 @use "../global" as *;
 
 .l-contents {
-  color: $color2;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
-  &__news {
-    writing-mode: vertical-rl;
-    max-width: 1024px;
-    margin: 0 0 0 auto;
-    margin-top: 280px;
-    @include tab {
-      flex-direction: column;
-      padding-left: 0;
-      margin-top: 176px;
 
-      max-width: 100%;
-      h1 {
-        line-height: 0px;
-        letter-spacing: 0em;
-      }
+  &__pictures {
+    display: flex;
+    margin-left: 5px;
+    &__text {
+      margin-left: 12px;
+      margin-top: 5px;
+      margin-right: 2px;
     }
-    &__topic {
-      margin-top: 77px;
-      margin-right: 105px;
-      border-right: 1px solid $color2;
-      @include tab {
-        flex-direction: column;
+  }
+  &__tcolumns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-top: 49px;
+    &-left {
+      width: 65%;
+      p {
+        @include f_around(16, regular, 24, 0);
+      }
+      img {
         margin-top: 10px;
-        margin-right: 46px;
-        p {
-          margin-left: 5px;
-          @include f_around(12, regular, 24, 400);
-        }
+        width: 99%;
       }
-
-      :nth-child(4),
-      :nth-child(5) {
-        @include tab {
-          display: none;
-        }
-      }
-
-      li {
-        padding: 20px 0;
-        margin: 0 20px;
-        @include tab {
-          margin: 0px;
-        }
-        border-left: 1px solid #141414;
-        time {
-          margin-right: 5px;
-        }
+      h3 {
+        margin-top: 30px;
       }
     }
-  }
-  &__value {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 180px;
-    @include tab {
-      margin-top: 72px;
-    }
-    position: relative;
-  }
-  &__topic {
-    display: flex;
-    position: relative;
-    margin-top: 192px;
-    margin-left: 25px;
-    @include tab {
-      margin-top: 84px;
+    &-right {
+      margin-top: 10px;
+
+      width: 35%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
