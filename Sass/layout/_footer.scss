@@ -3,9 +3,14 @@
 .l-footer {
   width: 100%;
   background: #f7f7f7;
+  margin-top: 290px;
+  margin-left: 20px;
+  justify-content: space-between;
+
   &__article {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 45px;
   }
 }

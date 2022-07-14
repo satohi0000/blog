@@ -267,11 +267,15 @@ select {
 .l-footer {
   width: 100%;
   background: #f7f7f7;
+  margin-top: 290px;
+  margin-left: 20px;
+  justify-content: space-between;
 }
 .l-footer__article {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 45px;
 }
 
 .l-header {
@@ -451,6 +455,34 @@ select {
 }
 .p-article__archive__position p:last-child {
   border-bottom: 1px solid #333;
+}
+.p-article__about {
+  width: 38%;
+}
+.p-article__about p {
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 1.5;
+  letter-spacing: 0em;
+}
+.p-article__about h2 {
+  font-weight: bold;
+}
+.p-article__about1 {
+  margin-top: 26px;
+  margin-right: 58px;
+}
+.p-article__about2 {
+  margin-top: 19px;
+}
+.p-article__about3 {
+  margin-top: 6px;
+}
+.p-article__menu {
+  width: 22%;
+}
+.p-article__tweet {
+  width: 33%;
 }
 
 .btopic {

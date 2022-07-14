@@ -53,4 +53,29 @@
       }
     }
   }
+  &__about {
+    width: 38%;
+    p {
+      @include f_around(14, regular, 21, 0);
+    }
+    h2 {
+      font-weight: bold;
+    }
+    &1 {
+      margin-top: 26px;
+      margin-right: 58px;
+    }
+    &2 {
+      margin-top: 19px;
+    }
+    &3 {
+      margin-top: 6px;
+    }
+  }
+  &__menu {
+    width: 22%;
+  }
+  &__tweet {
+    width: 33%;
+  }
 }
