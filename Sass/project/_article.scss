@@ -44,17 +44,14 @@
     &__position {
       margin-top: 24px;
       p {
-        margin-top: 0px;
+        padding-left: 24px;
         border-top: 1px solid #333;
         line-height: 60px;
-        &:last-child {
-          border-bottom: 1px solid #333;
-        }
       }
     }
   }
   &__about {
-    width: 38%;
+    width: 35%;
     p {
       @include f_around(14, regular, 21, 0);
     }
@@ -63,7 +60,7 @@
     }
     &1 {
       margin-top: 26px;
-      margin-right: 58px;
+      margin-right: 66px;
     }
     &2 {
       margin-top: 19px;
@@ -73,9 +70,26 @@
     }
   }
   &__menu {
-    width: 22%;
+    width: 29%;
+    &-bar {
+      margin-top: 27px;
+      p {
+        padding-left: 13px;
+        border-top: 1px solid #333;
+        line-height: 50px;
+      }
+      &__last {
+        border-bottom: 1px solid #333;
+      }
+    }
   }
-  &__tweet {
-    width: 33%;
+  &__twitter {
+    width: 29%;
+    margin-left: 56px;
+    height: 333px;
   }
+}
+
+#twitter-widget-0 {
+  height: 333px !important;
 }
