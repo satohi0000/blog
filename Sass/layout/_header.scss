@@ -4,8 +4,9 @@
   color: $color1;
   width: 100%;
   margin: 0 auto;
-  &__logo {
-    max-width: 1200px;
-    margin: 20px 0px 0 210px;
+  &__title {
+    max-width: 1176px;
+    margin: 0 auto;
+    margin-top: 23px;
   }
 }
