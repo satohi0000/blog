@@ -16,6 +16,9 @@
     }
     p {
       margin: 25px 25px 28px 39px;
+      @include tab {
+        margin: 25px 22px 28px 0px;
+      }
     }
   }
   &__runking {
@@ -26,17 +29,28 @@
       margin-top: 18px;
       margin-left: 37px;
       object-fit: cover;
+      @include tab {
+        width: 95%;
+        margin: 23px 0px 0px 0px;
+      }
     }
     h2 {
       text-align: center;
     }
     p {
       margin: 0px 26px 2px 38px;
+      @include tab {
+        width: 95%;
+        margin: 0px 0px 0px 0px;
+      }
     }
   }
   &__archive {
     margin-top: 48px;
     margin-left: 37px;
+    @include tab {
+      margin-left: 0px;
+    }
     margin-right: 23px;
     h2 {
       text-align: center;
@@ -44,7 +58,7 @@
     &__position {
       margin-top: 24px;
       p {
-        padding-left: 24px;
+        padding-left: 17px;
         border-top: 1px solid #333;
         line-height: 60px;
       }
@@ -52,6 +66,9 @@
   }
   &__about {
     width: 35%;
+    @include tab {
+      width: 100%;
+    }
     p {
       @include f_around(14, regular, 21, 0);
     }
@@ -61,9 +78,15 @@
     &1 {
       margin-top: 26px;
       margin-right: 66px;
+      @include tab {
+        margin-right: 32px;
+      }
     }
     &2 {
       margin-top: 19px;
+      @include tab {
+        margin-top: 5px;
+      }
     }
     &3 {
       margin-top: 6px;
@@ -71,6 +94,10 @@
   }
   &__menu {
     width: 29%;
+    @include tab {
+      width: 100%;
+      margin-top: 42px;
+    }
     &-bar {
       margin-top: 27px;
       p {
@@ -86,6 +113,11 @@
   &__twitter {
     width: 29%;
     margin-left: 56px;
+    @include tab {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 23px;
+    }
     height: 333px;
   }
 }
